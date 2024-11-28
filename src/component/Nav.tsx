@@ -8,7 +8,7 @@ import close from "../assets/close.png";
 import information from "../assets/picto-about.png";
 import play from "../assets/picto-game.png";
 import home from "../assets/picto-home.png";
-import question from "../public/picto-test.png";
+import question from "./../assets/picto-test.png";
 
 import { useState } from "react";
 
