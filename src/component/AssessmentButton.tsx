@@ -1,5 +1,7 @@
 import "./AssessmentButton.css";
 
+import question from "../src/assets/picto-test.png";
+
 interface AssessmentButtonProps {
 	setCurrentAssessmentStep: React.Dispatch<React.SetStateAction<number>>;
 }
@@ -14,7 +16,7 @@ const AssessmentButton = ({
 			onClick={() => setCurrentAssessmentStep(1)}
 		>
 			<p>Commencer le test</p>
-			<img src="../src/assets/picto-test.png" alt="point d'interrogation" />
+			<img src={question} alt="point d'interrogation" />
 		</button>
 	);
 };
