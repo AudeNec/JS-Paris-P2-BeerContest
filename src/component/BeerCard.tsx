@@ -1,4 +1,4 @@
-import "./Beercard.css";
+import "./BeerCard.css";
 import { useState } from "react";
 import type React from "react";
 
