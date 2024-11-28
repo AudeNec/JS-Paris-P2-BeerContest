@@ -1,5 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
+
 import imageAlcoholLevel from "../assets/Beer-game-AlcoholLeve.png";
+import boost from "../src/assets/boost.png";
+import arrow from "../src/assets/arrow.png";
 
 import "./GameSet.css";
 import BeerCard from "./BeerCard";
@@ -232,7 +235,7 @@ function GameSet({
 					</p>
 					<div id="boost">
 						<img
-							src="../src/assets/boost.png"
+							src={boost}
 							alt="boost"
 							className={boostOn ? "" : "boost-off"}
 							width="20px"
@@ -282,7 +285,7 @@ function GameSet({
 							<h3 id="pick-card">
 								Choisis une carte <br />
 								<img
-									src="../src/assets/arrow.png"
+									src={arrow}
 									alt="flèche vers le bas"
 									width="60px"
 									id="arrow"

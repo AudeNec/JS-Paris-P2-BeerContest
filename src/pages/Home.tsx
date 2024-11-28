@@ -1,16 +1,14 @@
 import HomeButtons from "../component/HomeButtons";
 import "./Home.css";
 
+import barman from "../src/assets/barman.png";
+
 function Home() {
 	return (
 		<main id="main-home">
 			<div className="entrance-game">
 				<h1>Bienvenue sur notre Beer Contest</h1>
-				<img
-					src="src\assets\barman.png"
-					alt="Le barman"
-					className="character-image-mobile"
-				/>
+				<img src={barman} alt="Le barman" className="character-image-mobile" />
 				<p className="header-txt">
 					L’abus d’alcool est dangereux pour la santé, buvez avec modération.
 				</p>
@@ -22,11 +20,7 @@ function Home() {
 
 				<HomeButtons />
 			</div>
-			<img
-				src="src\assets\barman.png"
-				alt="Le barman"
-				className="character-image"
-			/>
+			<img src={barman} alt="Le barman" className="character-image" />
 		</main>
 	);
 }

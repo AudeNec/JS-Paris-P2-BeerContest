@@ -6,6 +6,8 @@ import AssessmentResult from "../component/AssessmentResults";
 
 import assessmentContent from "../data/AssessmentContent";
 
+import barman from "../src/assets/barman.png";
+
 import "./Assessment.css";
 
 function Assessment() {
@@ -23,17 +25,13 @@ function Assessment() {
 
 	return (
 		<main id="main-assessment">
-			<img
-				src="src\assets\barman.png"
-				alt="Mon personnage"
-				className="character-image"
-			/>
+			<img src={barman} alt="Mon personnage" className="character-image" />
 
 			{currentAssessmentStep === TEST_STEPS.startTest ? (
 				<header className="assessment-content" id="assessment-intro">
 					<h1>Hello !</h1>
 					<img
-						src="src\assets\barman.png"
+						src={barman}
 						alt="Le barman"
 						className="character-image-mobile"
 					/>

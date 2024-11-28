@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 
 import "./HomeButtons.css";
 
-import logoBeer from "../src/assets/picto-beer.png";
+import logoBeer from "./../assets/picto-beer.png";
+import logoDeck from "../src/assets/deck.png";
 
 const HomeButtons = () => {
 	return (
@@ -10,7 +11,7 @@ const HomeButtons = () => {
 			<Link to="/Test">
 				<button type="button" className="home-button">
 					<p id="deck-button-text">Construire mon deck</p>
-					<img src="../src/assets/deck.png" alt="logo deck" id="logo-deck" />
+					<img src={logoDeck} alt="logo deck" id="logo-deck" />
 				</button>
 			</Link>
 			<Link to="/game">

@@ -3,6 +3,8 @@ import "./PopUp.css";
 import barman from "../assets/barman.png";
 import { useUserStats } from "../context/UserStats";
 
+import boost from "../src/assets/boost.png";
+
 interface PopUpProps {
 	currentGameState: number;
 	gameStates: { start: number; ingame: number; end: number };
@@ -45,7 +47,7 @@ function PopUp({
 							</p>
 							<div id="boost-desc">
 								<img
-									src="../src/assets/boost.png"
+									src={boost}
 									alt="boost"
 									width="20px"
 									height="20px"
