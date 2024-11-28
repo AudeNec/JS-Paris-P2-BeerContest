@@ -258,19 +258,6 @@ function GameSet({
 			<section className="deck" id="computer-deck">
 				{decks.computer.length > 0 ? (
 					decks.computer.map((beer) => {
-						let drunkEffectClass = "";
-						if (alcoholLevel >= 5 && alcoholLevel < 10) {
-							drunkEffectClass = "drunk-light";
-						} else if (alcoholLevel >= 10 && alcoholLevel < 15) {
-							drunkEffectClass = "drunk-medium";
-						} else if (alcoholLevel >= 15 && alcoholLevel < 20) {
-							drunkEffectClass = "drunk-high";
-						} else if (alcoholLevel >= 20 && alcoholLevel < 25) {
-							drunkEffectClass = "drunk-very-high";
-						} else if (alcoholLevel >= 25) {
-							drunkEffectClass = "drunk-extreme";
-						}
-
 						return (
 							<BeerCard
 								key={`computer ${beer.sku}-${Math.random()}`}
@@ -308,19 +295,6 @@ function GameSet({
 			<section className="deck" id="user-deck">
 				{decks.user.length > 0 ? (
 					decks.user.map((beer) => {
-						let drunkEffectClass = "";
-						if (alcoholLevel >= 5 && alcoholLevel < 10) {
-							drunkEffectClass = "drunk-light";
-						} else if (alcoholLevel >= 10 && alcoholLevel < 15) {
-							drunkEffectClass = "drunk-medium";
-						} else if (alcoholLevel >= 15 && alcoholLevel < 20) {
-							drunkEffectClass = "drunk-high";
-						} else if (alcoholLevel >= 20 && alcoholLevel < 25) {
-							drunkEffectClass = "drunk-very-high";
-						} else if (alcoholLevel >= 25) {
-							drunkEffectClass = "drunk-extreme";
-						}
-
 						return (
 							<BeerCard
 								key={`player-${beer.sku}-${Math.random()}`}
