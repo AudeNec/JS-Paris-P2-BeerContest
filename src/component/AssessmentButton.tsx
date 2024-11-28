@@ -1,6 +1,6 @@
 import "./AssessmentButton.css";
 
-import question from "../src/assets/picto-test.png";
+import question from "../public/picto-test.png";
 
 interface AssessmentButtonProps {
 	setCurrentAssessmentStep: React.Dispatch<React.SetStateAction<number>>;
