@@ -6,7 +6,7 @@ import AssessmentResult from "../component/AssessmentResults";
 
 import assessmentContent from "../data/AssessmentContent";
 
-import barman from "../src/assets/barman.png";
+import barman from "../assets/barman.png";
 
 import "./Assessment.css";
 

@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
 
 import imageAlcoholLevel from "../assets/Beer-game-AlcoholLeve.png";
-import boost from "../src/assets/boost.png";
-import arrow from "../src/assets/arrow.png";
+import boost from "../assets/boost.png";
+import arrow from "../assets/arrow.png";
 
 import "./GameSet.css";
 import BeerCard from "./BeerCard";

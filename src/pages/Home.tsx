@@ -1,7 +1,7 @@
 import HomeButtons from "../component/HomeButtons";
 import "./Home.css";
 
-import barman from "../src/assets/barman.png";
+import barman from "../assets/barman.png";
 
 function Home() {
 	return (

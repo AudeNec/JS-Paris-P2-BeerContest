@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./HomeButtons.css";
 
 import logoBeer from "./../assets/picto-beer.png";
-import logoDeck from "../src/assets/deck.png";
+import logoDeck from "../assets/deck.png";
 
 const HomeButtons = () => {
 	return (

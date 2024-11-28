@@ -3,7 +3,7 @@ import "./PopUp.css";
 import barman from "../assets/barman.png";
 import { useUserStats } from "../context/UserStats";
 
-import boost from "../src/assets/boost.png";
+import boost from "../assets/boost.png";
 
 interface PopUpProps {
 	currentGameState: number;
