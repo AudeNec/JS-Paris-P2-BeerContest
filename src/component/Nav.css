@@ -87,7 +87,7 @@
 
 	#nav-mobile {
 		background-size: cover;
-		background-image: url("/src/assets/accueil_720.jpg");
+		background-image: url("../src/assets/accueil_720.jpg");
 		background-color: #000000a6;
 		background-blend-mode: darken;
 

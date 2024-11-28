@@ -232,7 +232,7 @@ function GameSet({
 					</p>
 					<div id="boost">
 						<img
-							src="/src/assets/boost.png"
+							src="../src/assets/boost.png"
 							alt="boost"
 							className={boostOn ? "" : "boost-off"}
 							width="20px"
@@ -282,7 +282,7 @@ function GameSet({
 							<h3 id="pick-card">
 								Choisis une carte <br />
 								<img
-									src="/src/assets/arrow.png"
+									src="../src/assets/arrow.png"
 									alt="flèche vers le bas"
 									width="60px"
 									id="arrow"

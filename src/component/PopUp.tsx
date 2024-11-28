@@ -45,7 +45,7 @@ function PopUp({
 							</p>
 							<div id="boost-desc">
 								<img
-									src="/src/assets/boost.png"
+									src="../src/assets/boost.png"
 									alt="boost"
 									width="20px"
 									height="20px"

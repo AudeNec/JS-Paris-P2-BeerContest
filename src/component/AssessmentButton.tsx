@@ -14,7 +14,7 @@ const AssessmentButton = ({
 			onClick={() => setCurrentAssessmentStep(1)}
 		>
 			<p>Commencer le test</p>
-			<img src="src/assets/picto-test.png" alt="point d'interrogation" />
+			<img src="../src/assets/picto-test.png" alt="point d'interrogation" />
 		</button>
 	);
 };
