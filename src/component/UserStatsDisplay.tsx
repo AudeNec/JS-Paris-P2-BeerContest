@@ -10,7 +10,7 @@ function UserStatsDisplay() {
 			<p>Nombre de parties terminées</p>
 			<p>{userStats.gamePlayed}</p>
 			<p>Niveau d'alcoolémie moyen par partie</p>
-			<p>{userStats.gamePlayed}</p>
+			<p>{Math.round(userStats.alcoholLevelMean)}</p>
 			<p id="header-nb-games">Nombre de partie avec... </p>
 			<p className="stats-taux">...un taux d'alcoolémie faible</p>
 			<p>{userStats.gameLowAlcohol}</p>
