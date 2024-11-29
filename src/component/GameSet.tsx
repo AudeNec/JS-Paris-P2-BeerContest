@@ -140,8 +140,11 @@ function GameSet({
 
 	const updateAlcoholLevel = (winner: number, userCard: BeerType) => {
 		if (winner === ROUND_WINNER.computer) {
-			const userAbv = Number.parseFloat(userCard.abv.replace("%", ""));
-			setAlcoholLevel((prev) => prev + userAbv);
+			if (boostOn) setBoostOn(false);
+			else {
+				const userAbv = Number.parseFloat(userCard.abv.replace("%", ""));
+				setAlcoholLevel((prev) => prev + userAbv);
+			}
 		}
 	};
 	useEffect(() => {
@@ -189,9 +192,7 @@ function GameSet({
 			computerSelectedCard,
 			ROUND_WINNER,
 		);
-		boostOn
-			? setBoostOn(false)
-			: updateAlcoholLevel(roundResult.winner, selectedCard);
+		updateAlcoholLevel(roundResult.winner, selectedCard);
 		setRoundMsg(roundResult.message);
 
 		if (newUserDeck.length === 0) {
