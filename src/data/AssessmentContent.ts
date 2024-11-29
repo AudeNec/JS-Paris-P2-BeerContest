@@ -83,7 +83,7 @@ const assessmentContent = {
 		answer: [
 			{
 				type: "golden",
-				sentence: "Une rade perdue dans la campagne face à un beau paysage",
+				sentence: "Un rade perdu dans la campagne face à un beau paysage",
 			},
 			{ type: "belgian", sentence: "Un classique Pub bien rustique" },
 			{
