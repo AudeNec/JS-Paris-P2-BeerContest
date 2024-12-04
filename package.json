@@ -9,7 +9,7 @@
 		"check": "biome check --error-on-warnings --no-errors-on-unmatched --staged . && npm run check-types --if-present",
 		"preview": "vite preview",
 		"prepare": "husky || true",
-		"start": "npx json-server ./src/db.json"
+		"start": "node server.js"
 	},
 	"dependencies": {
 		"beercontest": "file:",
