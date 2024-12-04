@@ -71,6 +71,11 @@ function Game() {
 					</p>
 				</article>
 			</section>
+			<section id="mobile-version">
+				<p>
+					Pour une meilleure expérience, je t'invite à jouer sur ton ordinateur.
+				</p>
+			</section>
 		</main>
 	);
 }

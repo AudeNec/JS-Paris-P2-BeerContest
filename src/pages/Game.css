@@ -56,3 +56,33 @@ main#game-main article#game-rules {
 	color: white;
 	background-color: rgba(0, 0, 0, 0.4);
 }
+
+#mobile-version {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	#mobile-version {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		height: 85vh;
+		width: 100vw;
+		background-image: url("../assets/game-background.jpg");
+		background-size: cover;
+		z-index: 4;
+		position: absolute;
+	}
+
+	#mobile-version p {
+		background-color: var(--light-color);
+		padding: 5rem;
+
+		border-radius: 25px;
+
+		height: fit-content;
+		max-width: 80%;
+		text-align: center;
+	}
+}
