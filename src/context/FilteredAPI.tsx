@@ -64,8 +64,8 @@ export function FilteredAPIProvider({ children }: { children: ReactNode }) {
 				}
 				return response.json();
 			})
-			.then((data: BeerType[]) => {
-				setBeersFiltered(filterBeersPerType({ arrayOfBeers: data }));
+			.then((data: { code: number; error: false; data: BeerType[] }) => {
+				setBeersFiltered(filterBeersPerType({ arrayOfBeers: data.data }));
 			})
 			.catch((error) => console.error("Erreur lors du fetch:", error));
 	}, [filterBeersPerType]);

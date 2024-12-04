@@ -45,7 +45,7 @@ function GameSet({
 		})
 			.then((response) => response.json())
 			.then((data) => {
-				setBeers(data);
+				setBeers(data.data);
 			})
 			.catch((error) => console.error("Erreur lors du fetch:", error));
 	}, []);
