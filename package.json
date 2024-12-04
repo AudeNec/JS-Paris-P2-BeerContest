@@ -8,7 +8,8 @@
 		"build": "tsc -b && vite build",
 		"check": "biome check --error-on-warnings --no-errors-on-unmatched --staged . && npm run check-types --if-present",
 		"preview": "vite preview",
-		"prepare": "husky || true"
+		"prepare": "husky || true",
+		"start": "npx json-server ./src/db-json"
 	},
 	"dependencies": {
 		"beercontest": "file:",
