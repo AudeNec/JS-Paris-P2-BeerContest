@@ -8,8 +8,7 @@
 		"build": "tsc -b && vite build",
 		"check": "biome check --error-on-warnings --no-errors-on-unmatched --staged . && npm run check-types --if-present",
 		"preview": "vite preview",
-		"prepare": "husky || true",
-		"start": "node server.js"
+		"prepare": "husky || true"
 	},
 	"dependencies": {
 		"beercontest": "file:",

@@ -40,7 +40,7 @@ function GameSet({
 	}>({ user: [], computer: [] });
 
 	const getBeers = useCallback(() => {
-		fetch("http://localhost:3000/data", {
+		fetch("https://js-paris-p2-beer-contest-two.vercel.app/db.json", {
 			method: "GET",
 		})
 			.then((response) => response.json())
