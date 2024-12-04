@@ -4,7 +4,7 @@ function About() {
 	return (
 		<main id="main-about">
 			<header id="about-content">
-				<h1>A propos de nous</h1>
+				<h1>A propos de nous et de ce projet</h1>
 				<p>
 					Bienvenue sur notre projet de groupe, une aventure ludique et
 					éducative qui marie technologie et prévention !
@@ -30,6 +30,7 @@ function About() {
 					Merci de visiter notre site, et amusez-vous tout en jouant avec
 					modération ! 🍺🎮
 				</p>
+				<p>Aude, Edwige et Julien</p>
 			</header>
 		</main>
 	);
