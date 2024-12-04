@@ -55,7 +55,7 @@ export function FilteredAPIProvider({ children }: { children: ReactNode }) {
 	);
 
 	const getFilteredBeers = useCallback(() => {
-		fetch("https://js-paris-p2-beer-contest-two.vercel.app/db.json", {
+		fetch("https://beer-contest.vercel.app/db.json", {
 			method: "GET",
 		})
 			.then((response) => {
