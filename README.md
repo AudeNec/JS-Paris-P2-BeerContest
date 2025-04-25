@@ -1,33 +1,49 @@
-# React + TypeScript + Vite
+# 🍻 Beer Contest – React App with External API
 
-Ce modèle fournit une configuration minimale pour faire fonctionner React dans Vite avec certaines règles Biome et package préinstallé.
+**Beer Contest** is a playful and interactive React web app created as part of my training at [Wild Code School](https://www.wildcodeschool.com/). The main objective was to build a complete frontend project using an **external REST API**.
 
-Il est préconfiguré avec un ensemble d'outils pour aider les étudiants à produire du code de qualité industrielle, tout en restant un outil pédagogique :
+The app features a **beer-themed card game** and a light **personality quiz**, both powered by live data fetched from a public API.
 
-- **Husky** : Vous permet d'exécuter des commandes spécifiques déclenchées par des événements _git_.
-- **Vite** : Alternative à _Create-React-App_, offrant une expérience plus fluide avec moins d'outils.
-- **Biome** : Alternative à _ESlint_ et _Prettier_, assurant la qualité du code selon les règles choisies.
+Deployed with **Vercel** for quick and easy access online.
 
-## Utilisateurs Windows
+---
 
-Assurez-vous de lancer ces commandes dans un terminal Git pour éviter [les problèmes de formats de nouvelles lignes](https://en.wikipedia.org/wiki/Newline#Issues_with_different_newline_formats) :
+## 🎯 Project Goals
 
-```sh
-git config --global core.eol lf
-git config --global core.autocrlf false
+- Practice fetching and managing data from an external API
+- Build a fully interactive React interface
+- Use modern React tools and routing
+- Create a fun and engaging user experience
+
+---
+
+## 🍺 Features
+
+- Beer card game: Compare beers on their IBU, the less you drink the more you win
+- Personality test: Find out what beer matches your vibe
+- Clean and responsive UI
+- Live data from a beer-related public API
+
+---
+
+## ⚙️ Tech Stack
+
+- **React** – Frontend framework
+- **React Router DOM** – For navigation and routing
+- **Fetch API** – To retrieve external beer data
+- **Vercel** – For deployment and hosting
+
+---
+
+## 🛠️ Available Scripts
+
+| Script       | Description                           |
+|--------------|---------------------------------------|
+| `dev`        | Starts the local development server   |
+| `build`      | Builds the app for production         |
+| `lint`       | Runs ESLint (if configured)           |
+| `preview`    | Serves the production build locally   |
+
+```bash
+npm run <script>
 ```
-
-## Installation & Utilisation
-
-1. Installez le plugin **Biome** dans VSCode et configurez-le.
-2. Clonez ce dépôt, puis accédez au répertoire cloné.
-3. Exécutez la commande `npm install`.
-4. Créez un fichier d'environnement (`.env`) à la racine du dossier projet : vous pouvez copier le fichier `.env.sample` comme modèle (**ne le supprimez pas**).
-
-## Commandes de Base
-
-| Commande               | Description                                                                 |
-|------------------------|-----------------------------------------------------------------------------|
-| `npm install`          | Installe les dépendances                   |
-| `npm run dev`          | Démarre le server en développement         |
-| `npm run check`        | Exécute les outils de validation (linting et formatage)                     |
